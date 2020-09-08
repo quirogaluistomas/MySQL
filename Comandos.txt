@@ -1,0 +1,39 @@
+*******Principales comandos************
+CREATE DATABASE nombredb; * Creo la base de datos con el nombre que quiera
+
+USE DATABASE nombredb; *Utiliza la base de datos que le digo
+o
+USE nombredb; *Lo mismo pero depende del gestor de db si uso uno u otro.
+
+CREATE TABLE nombreTabla(
+	(CAMPOS)
+	id INTEGER;
+	nombre VARCHAR(20);
+	puesto VARCHAR(20);)
+
+*****TIPOS DE SENTENCIAS*****
+-MANIPULACION DE DATOS (DML):
+	SELECT *Recupera información
+	INSERT *Agregar datos a nuestra db en las tablas
+	DELETE *Eliminar datos insertados
+	UPDATE *Actualizar datos ingresados
+
+-DEFINICION DE DATOS (DDL)
+	CREATE *Crea objetos en la db
+	DROP *Eliminar objetos de la db o incluso db enteras
+	ALTER *Modificación o alteración de objetos de la db
+
+-INDICADORES O LLAVES PRIMARIAS
+	DEBE SER UNICA COMO EL DNI O NRO DE LEGAJO, ETC
+
+-TIPOS DE DATOS EN MYSQL:
+	-INT
+	-FLOAT
+	-VARCHAR
+	-DATE
+
+COMANDO:
+SELECT "CAMPOS" FROM "TABLA" WHERE "LIMITANTES"
+INSERT INTO "NOMBRE DE TABLA" VALUES ("PARÁMETROS")
+UPDATE "NOMBRE DE TABLA" SET "CAMPO = VALOR NUEVO" WHERE "CAMPO = VALOR"
+DELETE "NOMBRE DE TABLA" WHERE "CAMPO = VALOR"	

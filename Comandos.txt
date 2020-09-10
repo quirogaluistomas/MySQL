@@ -33,7 +33,18 @@ CREATE TABLE nombreTabla(
 	-DATE
 
 COMANDO:
+
 SELECT "CAMPOS" FROM "TABLA" WHERE "LIMITANTES"
 INSERT INTO "NOMBRE DE TABLA" VALUES ("PARÁMETROS")
 UPDATE "NOMBRE DE TABLA" SET "CAMPO = VALOR NUEVO" WHERE "CAMPO = VALOR"
-DELETE "NOMBRE DE TABLA" WHERE "CAMPO = VALOR"	
+DELETE "NOMBRE DE TABLA" WHERE "CAMPO = VALOR"
+LIKE "%PALABRA A COINCIDIR%", "%PALABRA", "PALABRA%"
+DISTINCT -> Trae datos sin repetir
+AND/OR -> Se agrega en luego de la condición del where.
+NOT -> Trae lo contrario de lo que se indique
+BETWEEN -> Se pone luego del where, trae valores entre un rango, se utiliza también el AND.
+ORDER BY "NOMBRE_COLUMNA" ASC/DESC
+ALIAS -> SELECT "nombre_campo" AS "alias_campo"
+TRUNCATE TABLE -> Limpia toda la tabla sin eliminarla
+DROP TABLE "nombreTabla"-> Elimina por completo la tabla
+DROP DATABASE "nombreTabla"-> Elimina la base de datos.	
